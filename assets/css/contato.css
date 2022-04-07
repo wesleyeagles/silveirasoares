@@ -1,0 +1,177 @@
+header {
+
+    background: url(/assets/images/contato/bg-hero.png);
+    width: 100%;
+    background-attachment: initial!important;
+    height: 80vh!important;
+}
+
+section:nth-child(1) {
+
+    height: 830px;
+    position: relative;
+}
+
+section:nth-child(2) {
+
+    height: 610px;
+    position: relative;
+}
+
+section:nth-child(1)::before {
+
+    position: absolute;
+    content: url(/assets/images/element_style_wrapper.svg);
+    bottom: -30px;
+    z-index: 2;
+}
+
+section form {
+
+    width: 90%;
+    background: rgba(0, 0, 0, 0.774);
+    border-radius: 8px;
+    height: max-content;
+}
+
+section form input {
+
+    width: 80%;
+    height: 65px;
+    background: transparent;
+    border: solid #E5E5E5 1px;
+    border-radius: 8px;
+}
+
+form div {
+
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-submit {
+
+    width: 40%;
+    height: 65px;
+    border-radius: 8px;
+}
+
+section form textarea {
+
+    width: 80%;
+    height: 180px;
+    background: transparent;
+    border: solid #E5E5E5 1px;
+    border-radius: 8px;
+}
+
+.contato span {
+
+    font-size: 22px;
+    font-family: 'Open Sans';
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px!important;
+}
+
+.contato p {
+
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    height: 15px;
+}
+
+.list-1 {
+
+    width: 100%;
+}
+
+.list-2 {
+
+    width: 100%;
+}
+
+section iframe {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+footer {
+
+    height: 220px;
+    background: #000;
+}
+
+.navigation ul {
+
+    padding: 0;
+}
+
+.navigation, .copyrights {
+
+    justify-content: space-between;
+    width: 80vw;
+}
+
+hr {
+
+    width: 79vw!important;
+    background: #FFF;
+}
+
+
+@media screen and (max-width: 428px) {
+
+    hr {
+
+        width: 100vw!important;
+    }
+
+    section:nth-child(1)::before {
+
+        display: none;
+        position: absolute;
+        content: url(/assets/images/element_style_wrapper.svg);
+        bottom: -30px;
+        z-index: 2;
+    }
+
+    section:nth-child(1) {
+
+        height: 1300px;
+        position: relative;
+    }
+
+    section form {
+
+        width: 95%;
+        background: rgba(0, 0, 0, 0.774);
+        border-radius: 8px;
+        height: max-content;
+    }
+    
+    section form input {
+    
+        width: 90%;
+        height: 45px;
+        background: transparent;
+        border: solid #E5E5E5 1px;
+        border-radius: 8px;
+    }
+
+    section form textarea {
+
+        width: 90%;
+        height: 120px;
+        background: transparent;
+        border: solid #E5E5E5 1px;
+        border-radius: 8px;
+    }
+    
+}
+

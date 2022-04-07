@@ -1,0 +1,15 @@
+header {
+
+    width: 100%;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-attachment: fixed!important;
+    height: 100vh;
+}
+
+.row {
+
+    max-width: 100%;
+}
+

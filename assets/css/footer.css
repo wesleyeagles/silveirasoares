@@ -1,0 +1,308 @@
+footer {
+
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #000;
+}
+
+h4 {
+
+    font-size: 30px;
+    font-family: 'Volkhov';
+    font-weight: 400;
+    width: 65%;
+    line-height: 50px;
+}
+
+.inner-title {
+
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.inner-text {
+
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    width: 70%;
+    line-height: 32px;
+}
+
+.grid {
+
+    display: grid;
+    justify-content: center;
+}
+
+.grid-template {
+
+    grid-template: 
+    "contato form atendimento" 170px
+    "contato form atendimento" 170px
+    "contato form atendimento" 170px
+     / 500px 620px 500px
+    ;
+}
+
+.contato {
+
+    grid-area: contato;
+    
+}
+
+.form {
+
+    grid-area: form;
+    
+}
+
+.atendimento {
+
+    grid-area: atendimento;
+    
+}
+
+
+footer form input:nth-child(1) {
+
+    width: 100%;
+    height: 54px;
+    background: transparent;
+    border-radius: 8px;
+    outline: none;
+    border: solid 1px #FFF;
+}
+
+footer form input:nth-child(2), footer form input:nth-child(3) {
+
+    width: 47.78%;
+    outline: none;
+    background: transparent;
+    border-radius: 8px;
+    border: solid 1px #FFF;
+    height: 54px;
+
+}
+
+footer form select {
+
+    width: 47.78%;
+    height: 54px;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    color: #FFF;
+    padding: 10px 20px;
+    border: solid 1px #FFF;
+}
+
+footer form select option {
+
+    background: #000;
+}
+
+footer form textarea {
+
+    width: 100%;
+    height: 115px;
+    background: transparent;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-form {
+
+    width: 170px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.outer-box {
+
+    width: 340px;
+    height: 325px;
+    border: solid 1px #FFF;
+    border-radius: 8px;
+    margin-left: 50px;
+    padding: 30px 40px;
+}
+
+.marginFOOTER {
+
+    margin-left: 128px;
+    margin-right: 150px;
+}
+
+.grid-template-copy {
+
+    grid-template: 
+    "copyright nav eagles" 5px
+    "copyright nav eagles" 5px
+    "copyright nav eagles" 5px
+     / 490px 630px 500px
+    ;
+}
+
+footer span {
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}
+
+footer ul li {
+
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width: 1440px) {
+    
+    .grid-template {
+
+        grid-template: 
+        "contato form atendimento" 170px
+        "contato form atendimento" 170px
+        "contato form atendimento" 170px
+         / 475px 400px 400px
+        ;
+    }
+
+    .grid-template-copy {
+
+        grid-template: 
+        "copyright nav eagles" 5px
+        "copyright nav eagles" 5px
+        "copyright nav eagles" 5px
+         / 375px 600px 300px
+        ;
+    }
+
+    footer form input:nth-child(2), footer form input:nth-child(3) {
+
+        width: 47.0%;
+        outline: none;
+        background: transparent;
+        border-radius: 8px;
+        border: solid 1px #FFF;
+    
+    }
+    
+    footer form select {
+    
+        width: 47.0%;
+        height: 54px;
+        border-radius: 8px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #FFF;
+        padding: 10px 20px;
+        border: solid 1px #FFF;
+    }
+
+    .marginFOOTER {
+
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    footer form input:nth-child(2), footer form input:nth-child(3) {
+
+        width: 100%;
+        outline: none;
+        background: transparent;
+        border-radius: 8px;
+        border: solid 1px #FFF;
+    
+    }
+    
+    footer form select {
+    
+        width: 100%;
+        height: 54px;
+        border-radius: 8px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #FFF;
+        padding: 10px 20px;
+        border: solid 1px #FFF;
+    }
+
+    .outer-box {
+
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    
+    .grid {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .atendimento {
+
+        justify-content: center!important;
+    }
+
+    .grid-template {
+
+        grid-template: 
+        "contato contato contato" 500px
+        "form form form" 500px
+        "atendimento atendimento atendimento" 500px
+         / 375px 375px 375px
+        ;
+    }
+    
+    .grid-template-copy {
+
+        grid-template: 
+        "copyright nav eagles" 5px
+        "copyright nav eagles" 5px
+        "copyright nav eagles" 5px
+         / 375px 600px 300px
+        ;
+    }
+
+    .footer-menu span {
+
+        width: 33%;
+        height: 50px;
+        background: #fff;
+
+    }
+}
