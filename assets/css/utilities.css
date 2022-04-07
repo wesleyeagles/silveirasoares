@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+:root {
+
+    --red: #A20000;
+    --gray: #5D5D5D;
+
+}
+
+
+h1 {
+
+    font-family: 'Volkhov';
+    font-size: 60px;
+    width: 20%;
+    margin-left: 150px;
+    position: relative;
+}
+
+h1::before {
+
+    position: absolute;
+    content: url(/assets/images/element_style.svg);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -250px;
+}
+
+h2 {
+
+    font-size: 60px;
+    font-family: 'Volkhov';
+    width: 90%;
+}
+
+h3 {
+
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+h6 {
+
+    font-size: 80px;
+    font-family: 'Volkhov';
+}
+
+b {
+
+    font-weight: 800;
+}
+
+p {
+
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    width: 85%;
+}
+
+input, textarea {
+
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+button {
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    background: #A20000;
+    transition: .4s linear;
+    border: none;
+    color: #FFF;
+}
+
+button:hover {
+
+    background: #000;
+}
+
+input::placeholder, textarea::placeholder {
+
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    color: #FFF;
+}
+
+li {
+
+    font-family: 'Open Sans';
+    font-weight: 200;
+    font-size: 20px;
+    list-style: none;
+    color: #FFF;
+    transition: .4s linear;
+
+}
+
+li:hover {
+
+
+color: var(--red);
+
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.active {
+
+    font-weight: 800!important;
+}
+
+@media screen and (max-width: 1440px) {
+
+    h1 {
+
+        font-family: 'Volkhov';
+        font-size: 60px;
+        width: 25%;
+        margin-left: 150px;
+        position: relative;
+    }
+
+    h1::before {
+
+        position: absolute;
+        content: url(/assets/images/element_style.svg);
+        top: 50%;
+        transform: translateY(-50%);
+        left: -250px;
+    }
+
+    h2 {
+
+        font-size: 50px;
+        width: 100%;
+    }
+
+    h6 {
+
+        font-size: 50px;
+    }
+
+    p {
+
+        font-size: 18px;
+        width: 100%;
+    }
+
+    input, textarea {
+
+        font-size: 16px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #FFF;
+        padding: 10px 20px;
+    }
+
+    input::placeholder, textarea::placeholder {
+
+        font-size: 16px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #FFF;
+    }
+    
+}
+
+@media screen and (max-width: 428px) {
+
+
+
+    h1 {
+
+        font-family: 'Volkhov';
+        font-size: 38px;
+        width: 60%;
+        margin-left: 80px;
+    }
+
+    h1::before {
+
+        position: absolute;
+        content: url(/assets/images/element_style.svg);
+        top: 50%;
+        transform: translateY(-50%);
+        left: -230px;
+    }
+
+    h2 {
+
+        font-size: 30px;
+        font-family: 'Volkhov';
+        width: 90%;
+    }
+
+    h3 {
+
+        font-size: 18px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        width: 100%;
+    }
+
+    h6 {
+
+        font-size: 40px;
+    }
+
+    p {
+
+        font-size: 16px;
+        width: 90%;
+    }
+
+    input, textarea {
+
+        font-size: 14px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #FFF;
+        padding: 10px 20px;
+    }
+    
+    button {
+    
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Open Sans';
+        background: #A20000;
+        transition: .4s linear;
+        border: none;
+        color: #FFF;
+    }
+
+}
